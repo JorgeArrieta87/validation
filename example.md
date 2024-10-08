@@ -14,13 +14,20 @@ __Commit__
 # Tracked
 # Untracked
 
-# Tracked FIles
+# Tracked Files
 # Unmodified
 # Modified
 # Staged
 
-# git Restoring FIles
-## git restore README.md
+# git Restoring Files
+# git restore README.md
 # git restore .
 # git Checkout .
 # git restore --staged README.md
+
+# Global Ignore Files
+## git config --global core.excludesfile /path-file
+
+# Clearing the cache
+# git rm -r --cached .
+
