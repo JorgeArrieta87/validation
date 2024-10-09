@@ -3,11 +3,19 @@ read -p "Declare valor MEMORY_VALUE " $MEMORY_VALUE
 read -p "Declare valor MEMORY_LIMIT " $MEMORY_LIMIT
 read -p "Declare valor JAVA_XMS " $JAVA_XMS
 read -p "Declare valor JAVA_XMX " $JAVA_XMX
+read -p "Declare valor CPU_REQUEST " $CPU_REQUEST
+read -p "Declare valor CPU_LIMIT " $CPU_LIMIT
+read -p "Declare valor REPLICAS_MINIMAS " $REPLICAS_MINIMAS
+read -p "Declare valor REPLICAS_MAXIMAS " $REPLICAS_MAXIMAS
 
 echo "Valor ingresado "  $MEMORY_VALUE  " MEMORY_VALUE "
 echo "Valor ingresado "  $MEMORY_LIMIT  " MEMORY_LIMIT "
 echo "Valor ingresado "  $JAVA_XMS  " JAVA_XMS "
 echo "Valor ingresado "  $JAVA_XMX  " JAVA_XMX "
+echo "Valor ingresado "  $CPU_REQUEST  " CPU_REQUEST "
+echo "Valor ingresado "  $CPU_LIMIT  " CPU_LIMIT "
+echo "Valor ingresado "  $REPLICAS_MINIMAS  " REPLICAS_MINIMAS "
+echo "Valor ingresado "  $REPLICAS_MAXIMAS  " REPLICAS_MAXIMAS "
 
 
 echo "Se Procede a Validar valores cargados "
