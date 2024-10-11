@@ -14,8 +14,8 @@ TOLERANCIA=30
 
 echo "Valor ingresado "  $MEMORY_VALUE  " MEMORY_VALUE "
 echo "Valor ingresado "  $MEMORY_LIMIT  " MEMORY_LIMIT "
-#echo "Valor ingresado "  $JAVA_XMS  " JAVA_XMS "
-#echo "Valor ingresado "  $JAVA_XMX  " JAVA_XMX "
+echo "Valor ingresado "  $JAVA_XMS  " JAVA_XMS "
+echo "Valor ingresado "  $JAVA_XMX  " JAVA_XMX "
 #echo "Valor ingresado "  $CPU_REQUEST  " CPU_REQUEST "
 #echo "Valor ingresado "  $CPU_LIMIT  " CPU_LIMIT "
 #echo "Valor ingresado "  $REPLICAS_MINIMAS  " REPLICAS_MINIMAS "
@@ -26,12 +26,12 @@ echo "Se Procede a Validar valores cargados "
 #PORCENTAJE=$(echo "scale=; ($MEMORY_VALUE / $MEMORY_LIMIT)*100" | bc)
 PORCENTAJE=$(echo "scale=2; ($MEMORY_VALUE / $MEMORY_LIMIT)*100" | bc)
 PORCENTAJE=$( printf "%.0f" $PORCENTAJE )
-echo $PORCENTAJE
+
 if [ $MEMORY_VALUE -le  $MEMORY_LIMIT ] && [ $PORCENTAJE -le $TOLERANCIA ] ; then
         
-		echo " Valor APROBADO  " 
+	echo " Valor APROBADO  " 
 else 
         echo " Valor RECHAZADO  Considere usar un margen del 30% entre esos valores"
+        exit 1;
 fi
-	
-echo "FIN"
+echo "FIN
